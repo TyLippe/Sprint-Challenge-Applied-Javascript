@@ -6,14 +6,12 @@ class Carousel {
         this.rightButton = document.querySelector('.right-button')
         //Select All Images //Edit, put imgs in an Array?
         this.imgs = Array.from(document.querySelectorAll('.carousel img')).map(img => new CarouselImg(img))
-        //Specify the current image
-        this.currentImg = this.imgs[]
         //Add click events
         this.leftButton.addEventListener('click', () => this.prevImg())
         this.rightButton.addEventListener('click', () => this.nextImg())
     }
     nextImg(){
-        
+
     }
     prevImg() {
     
